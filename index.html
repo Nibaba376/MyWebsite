@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        #home {
+            background-color: #444;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('restaurant-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #home p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+
+        #about, #menu, #team, #testimonials, #contact {
+            background-color: #fff;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu-item, .team-member, .testimonial {
+            margin: 1rem 0;
+        }
+
+        .menu-item h3, .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        #contact p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Restaurant Name</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über Uns</a></li>
+                <li><a href="#menu">Speisekarte</a></li>
+                <li><a href="#team">Unser Team</a></li>
+                <li><a href="#testimonials">Bewertungen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Willkommen im Restaurant Name</h1>
+        <p>Genießen Sie exquisite Speisen und Getränke in einem gemütlichen Ambiente.</p>
+    </section>
+    <section id="about">
+        <h2>Über Uns</h2>
+        <p>Unser Restaurant bietet eine Vielzahl von Gerichten, die mit frischen Zutaten zubereitet werden. Seit unserer Eröffnung im Jahr 2000 sind wir stolz darauf, eine einladende Atmosphäre und hervorragenden Service zu bieten.</p>
+        <p>Wir legen großen Wert auf Qualität und Nachhaltigkeit. Unsere Zutaten stammen von lokalen Lieferanten, um die Frische und den Geschmack unserer Speisen zu gewährleisten.</p>
+    </section>
+    <section id="menu">
+        <h2>Speisekarte</h2>
+        <div class="menu-item">
+            <h3>Vorspeise 1</h3>
+            <p>Beschreibung der Vorspeise 1. Ein köstlicher Einstieg in Ihr kulinarisches Erlebnis.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Hauptgericht 1</h3>
+            <p>Beschreibung des Hauptgerichts 1. Ein herzhaftes Gericht, das Sie begeistern wird.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Dessert 1</h3>
+            <p>Beschreibung des Desserts 1. Ein süßer Abschluss für Ihr Menü.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Vorspeise 2</h3>
+            <p>Beschreibung der Vorspeise 2. Eine leichte und erfrischende Option.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Hauptgericht 2</h3>
+            <p>Beschreibung des Hauptgerichts 2. Ein Gericht mit traditionellen Aromen und modernen Akzenten.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Dessert 2</h3>
+            <p>Beschreibung des Desserts 2. Eine unwiderstehliche Nascherei.</p>
+        </div>
+    </section>
+    <section id="team">
+        <h2>Unser Team</h2>
+        <div class="team-member">
+            <h3>Chefkoch Max Mustermann</h3>
+            <p>Unser talentierter Chefkoch, der köstliche Gerichte kreiert und jede Mahlzeit zu einem besonderen Erlebnis macht.</p>
+        </div>
+        <div class="team-member">
+            <h3>Restaurantleiterin Anna Musterfrau</h3>
+            <p>Unsere erfahrene Restaurantleiterin, die für einen reibungslosen Ablauf sorgt und sicherstellt, dass unsere Gäste stets zufrieden sind.</p>
+        </div>
+        <div class="team-member">
+            <h3>Kellner Paul Beispiel</h3>
+            <p>Unser freundliches Servicepersonal, das Ihnen gerne zur Verfügung steht und dafür sorgt, dass Sie sich bei uns wohlfühlen.</p>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Bewertungen</h2>
+        <div class="testimonial">
+            <p>"Das beste Restaurant, das ich je besucht habe! Das Essen war fantastisch und der Service erstklassig." - Kunde 1</p>
+        </div>
+        <div class="testimonial">
+            <p>"Ein wunderbares Erlebnis! Die Atmosphäre war gemütlich und die Speisen hervorragend." - Kunde 2</p>
+        </div>
+        <div class="testimonial">
+            <p>"Ich komme definitiv wieder! Die Auswahl an Gerichten und die Qualität des Essens waren beeindruckend." - Kunde 3</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
+        <p>Telefon: 01234 567890</p>
+        <p>Email: info@restaurantname.de</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Restaurant Name</p>
+    </footer>
+</body>
+</html>
